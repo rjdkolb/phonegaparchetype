@@ -1,0 +1,21 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-gwt:run</actionName>
+            <displayName>gwt:run</displayName>
+            <goals>
+                <goal>gwt:run</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>run.single.deploy</actionName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+                <goal>gwt:run</goal>
+            </goals>
+        </action>
+    </actions>
